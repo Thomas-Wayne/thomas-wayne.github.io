@@ -1,0 +1,33 @@
+.bookofmormonclass{
+    
+    display: flex;
+}
+
+
+.scriptures{
+    
+    color:blue;
+    
+    border:2px solid gold;
+    
+    padding:20px 20px;
+}
+
+#favscripture1{
+    
+    color: green;
+        
+}
+
+#favscripture2{
+    
+    color: purple;
+        
+}
+#favscripture3{
+    
+    color: red;
+        
+}
+
+
