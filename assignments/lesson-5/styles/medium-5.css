@@ -1,0 +1,55 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    header {
+        background-color: deepskyblue; 
+        color: white;
+        margin: 1.25rem auto;
+        padding: .25rem;
+        max-width:inherit;
+        text-align: center;
+        border: 1px solid black;
+        word-spacing: normal;
+        line-height:inherit;
+}
+    header img{
+        float:left;
+        width:inherit;
+}
+    main figure {
+        padding: .25rem;
+        height: auto;
+        max-width: 50%;
+        float:left;
+}
+   
+    nav {
+    display: inline;
+    
+}
+    nav ul li {
+        float:left;
+        text-align: center;
+        border-collapse:separate;
+        border: 1px solid black;
+}
+    section.current {
+        display: flex;
+        width: auto;
+        height: 90%;
+        padding: .25rem;
+}
+  
+  section.forecast { 
+      display: block; 
+}  /* show the 10-day forecast with the medium view and up */
+  
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width:30%;
+    margin: 1.25rem auto;
+    padding: .25rem;
+    float:right;
+}
+
+
+}
