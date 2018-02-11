@@ -14,7 +14,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: auto;
+    max-width: 30rem;
 }
 
 header {
