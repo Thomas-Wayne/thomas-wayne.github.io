@@ -14,7 +14,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 30rem;
+    max-width: auto;
 }
 
 header {
@@ -131,6 +131,7 @@ footer {
 	background-color: deepskyblue;
 	color: #fff;
     font-size: .8rem;
+    
 }
 footer aside {
     clear: both;
@@ -139,6 +140,7 @@ footer aside {
 	background-color: skyblue;
 	color: #fff;
     font-size: .8rem;
+    
 }
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
