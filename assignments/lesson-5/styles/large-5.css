@@ -2,10 +2,9 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
     main figure {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        
+        max-width: none;
+        max-height: 5%;
     }
     section.current {
         display: inline;
@@ -14,7 +13,8 @@
         padding: .25rem;
 }
     article p.town-article img { 
-        width: 29.333%; 
+        width: none; 
+        
     
     }
   
