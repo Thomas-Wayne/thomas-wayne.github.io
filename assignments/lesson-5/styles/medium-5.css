@@ -22,6 +22,12 @@
         max-width: 50%;
         float:left;
 }
+    main figure img{
+        
+        height:460px;
+        object-fit:fill;
+       
+    }
    
     nav {
     display: inline;
@@ -47,7 +53,7 @@
     .article{
         
         display: flex;
-        max-width:  width:30%;
+        width: auto;
         margin: 1.25rem auto;
         padding: .25rem;
 }
