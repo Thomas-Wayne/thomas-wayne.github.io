@@ -6,7 +6,7 @@
         color: white;
         margin: 1.25rem auto;
         padding: .25rem;
-        max-width:inherit;
+        max-width: inherit;
         text-align: center;
         border: 1px solid black;
         word-spacing: normal;
@@ -50,8 +50,7 @@
       display: block; 
 }  /* show the 10-day forecast with the medium view and up */
 
-    .article{
-        
+    .article{        
         display: flex;
         width: auto;
         margin: 1.25rem auto;
