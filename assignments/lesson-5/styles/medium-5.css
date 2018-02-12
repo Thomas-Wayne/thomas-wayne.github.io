@@ -43,13 +43,16 @@
   section.forecast { 
       display: block; 
 }  /* show the 10-day forecast with the medium view and up */
-  
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width:30%;
-    margin: 1.25rem auto;
-    padding: .25rem;
+
+    .article{
+        
+        display: flex;
+        max-width:  width:30%;
+        margin: 1.25rem auto;
+        padding: .25rem;
+}
+    article p.town-article img { 
+    width: 29.333%;;
     float:right;
 }
-
-
 }
