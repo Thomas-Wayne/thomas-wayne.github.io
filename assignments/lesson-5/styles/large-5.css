@@ -22,7 +22,7 @@
         padding: .25rem;
 }
     article p.town-article img { 
-        width: none; 
+        width: fill; 
         height:150px;  
         object-fit:fill;
     }
