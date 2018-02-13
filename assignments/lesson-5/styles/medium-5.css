@@ -27,8 +27,10 @@
         height:460px;
         object-fit:fill;
        
-    }
-   
+}
+    nav button {
+        display:none;
+}
     nav {
     display: inline;
     
