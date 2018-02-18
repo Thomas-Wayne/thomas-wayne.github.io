@@ -1,0 +1,181 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: helvetica, arial, ;'Anton','Source Sans Pro', sans-serif ;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: fill;
+}
+
+header {
+    background-color: deepskyblue; 
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    word-spacing: normal;
+    line-height: 1;
+   
+}
+header h1 {
+    font-family: 'Anton';
+    font-size: 2em;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    
+}
+header img {
+    display: none;
+}
+
+header .subheading {
+    font-family: 'Anton';
+    font-size: 1em;
+}
+
+table {
+    border-collapse:separate ;
+    width: 100%;
+}
+
+th, td {
+    width:auto;
+    border-collapse:separate ;
+    border: 1px solid black;
+    text-align: center;
+    background-color: none;
+}
+
+       
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: ;
+}
+nav button {
+    margin .2rem 2%;
+    background-color: transparent;
+    border: none;  
+    font-size: 1.6rem;
+    
+}
+nav {
+    background-color: transparent;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    
+}
+nav ul li a {
+    display: block;
+    border: none;
+    padding: .8rem 2%;
+    text-decoration: none;
+    border:none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {   
+    background-color: rgba(0,0,0,0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4); 
+    color: white;
+}
+nav ul.hide {
+    display:none;
+}
+
+section.forecast{
+    display: none;
+}
+
+main {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    margin: 1rem auto;
+    padding: .25rem;
+    max-width: none;
+}
+main h2 {}
+main figure {
+    margin: 0 0 0;
+    width:auto; 
+}
+
+main figure.franklinimage{
+    width: 100%;
+    margin: 0%;
+    float: left;
+    padding: .25rem;
+}
+main figure.franklinimage img{
+    width: 100%;   
+}
+
+table td img{
+    width: 50%;
+    height: auto;
+    float: top;
+    padding: .25rem;
+    
+}
+
+table figure.currentimage{
+    text-align: "center";
+}
+table figure.currentimage img {
+    width: :100%
+}
+
+.article{
+    display: inline-block;
+    text-align: left;
+}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    float:none;
+}
+
+
+footer {
+    
+    clear: both;
+    text-align: center;
+	padding: 1em;
+	background-color: deepskyblue;
+	color: #fff;
+    font-size: .8rem;
+    
+}
+footer aside {
+    clear: both;
+    text-align: center;
+	padding: 1em;
+	background-color: skyblue;
+	color: #fff;
+    font-size: .8rem;
+    
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

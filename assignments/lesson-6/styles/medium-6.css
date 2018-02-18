@@ -1,0 +1,81 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    
+	
+    
+    header {
+        background-color: deepskyblue; 
+        color: white;
+        margin: 1.25rem auto;
+        padding: .25rem;
+        max-width: inherit;
+        text-align: center;
+        border: 1px solid black;
+        word-spacing: normal;
+        line-height:inherit;
+}
+    header img{
+        display: block;
+        float:left;
+        width:inherit;
+}
+
+    
+    main figure.franklinimage {
+        padding: .25rem;
+       
+}
+    main figure.franklinimage img{
+        width: 100%;
+        
+}
+    nav button {
+        display:none;
+}
+    nav ul.hide {
+        display: block;
+    }
+    nav {
+        display: inline;
+}
+    nav ul {
+        margin-left 2%;
+        
+}
+    nav ul li {
+        float:left;
+        border: none;
+        text-align: center;
+        color: white;
+        padding: 2%;   
+        border-collapse:separate;
+        
+       
+}
+    nave ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding:.8rem 1rem;
+}
+    section.current {
+        width: auto;
+        height: 90%;
+        padding: .25rem;
+}
+  
+  section.forecast { 
+      display: block; 
+}  /* show the 10-day forecast with the medium view and up */
+
+    .article{        
+        display: flex;
+        width: auto;
+        margin: 1.25rem auto;
+        padding: .25rem;
+}
+    article p.town-article img { 
+    width: 50%;
+    float:right;
+}
+}

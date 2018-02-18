@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blue Skies Weather Site</title>
+        <meta name="author" content="Your Name Here">
+        <meta name="description" content="page description placeholder">
+        <!-- external style references in the proper cascading order -->    
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+    <header>
+        <img src="images/blueskies.jpg" alt="Blue Skies Picture">
+        <h1>Blue Skies Weather</h1>
+        <div class="subheading">Accurate Up to the Minute Forecast You Can Count On</div>
+        
+    </header>
+    
+<!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>		
+    </nav>
+
+<main>
+
+    <h2>Franklin</h2>
+
+    <figure class="franklinimage">
+        <img src="images/franklin.jpg" alt="franklin">
+    </figure>
+    
+<section class="current">
+
+    <table> 
+        <thead>
+            <tr>
+            <td colspan ="2">
+                <h3>Weather Summary</h3>
+            </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Currently it is Sunny</td>
+                <figure class= "currentimage">
+                    <td><img src="images/sunny.png" alt="sun picture"></td>
+                </figure>
+            </tr>
+            <tr>
+                <td>High:</td>
+                <td><h2>75&deg;F</h2></td>
+            </tr>
+            <tr>
+                <td>Low:</td>
+                <td><h3>65&deg;F</h3></td>
+            </tr>
+            <tr>
+                <td>Precipitation</td>
+                <td><h4>0%</h4></td>
+            </tr>
+            <tr>
+                <td>Wind Speed</td>
+                <td><h4>S SW 5 mph</h4></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="forecast">
+    <table>
+        <thead>
+            <tr>
+                <td colspan ="10">
+                <h3>10 Day Forecast</h3>
+                </td>
+            </tr>
+            <tr>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Day 3</th>
+                <th>Day 4</th>
+                <th>Day 5</th>
+                <th>Day 6</th>
+                <th>Day 7</th>
+                <th>Day 8</th>
+                <th>Day 9</th>
+                <th>Day 10</th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr>
+                <td><img src="images/partlycloudy.png" alt="pcloudyicon"> 89&deg;F</td>
+                <td><img src="images/lightrain.png" alt="rainicon">87&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">78&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">75&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">72&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">72&deg;F</td>
+                <td><img src="images/partlycloudy.png" alt="pcloudyicon">79&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">83&deg;F</td>
+                <td><img src="images/sunny.png" alt="sun icon">85&deg;F</td>
+                <td><img src="images/partlycloudy.png" alt="pcloudyicon">89&deg;F</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<div class="article">
+    <article>
+        <h4>Town Council Shocked At Latest Polls</h4>
+   
+        <p class="town-article">
+        <img src="images/franklintowncouncil.jpg" alt="franklinTownCouncil Picture">
+
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+    </article>		  
+</div>
+</main>
+
+<footer>
+        <aside>
+        Blue Skies Weather
+        123 Main Street
+        Franklin, MY 89888
+        (999)999-9999
+            contact@bsw.com
+        </aside>
+        <p class="footer-bar">&copy;2018 | Blue Skies Weather | <span id="currentdate">Current Date Placeholder</span></p>
+</footer>
+
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

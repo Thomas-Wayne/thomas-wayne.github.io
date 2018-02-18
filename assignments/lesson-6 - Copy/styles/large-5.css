@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+    
+    main figure{
+        
+        margin: 0;
+        padding: 0;
+        
+    }
+    main figure img{
+        
+        height:150px;
+        width:1900px;
+        object-fit:fill;
+       
+    }
+    section.current {
+        display: inline;
+        width: auto;
+        height: 90%;
+        padding: .25rem;
+}
+    article p.town-article img { 
+        width: fill; 
+        height:150px;  
+        object-fit:fill;
+    }
+  
+}
