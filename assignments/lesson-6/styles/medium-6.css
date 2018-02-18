@@ -35,13 +35,9 @@
 }
     nav ul.hide {
         display: block;
-    }
+}
     nav {
         display: inline;
-}
-    nav ul {
-        margin-left: 2%;
-        
 }
     nav ul li {
         float:left;
