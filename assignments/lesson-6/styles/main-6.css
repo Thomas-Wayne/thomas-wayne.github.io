@@ -5,7 +5,7 @@
 body {
     font-size: 16px; 
     line-height: 32px;
-    font-family: helvetica, arial, ;'Anton','Source Sans Pro', sans-serif ;
+    font-family: helvetica, arial,'Anton',sans-serif;
     color: black;
   /* Declare the base font-family - from google font api or other */
 }
@@ -52,7 +52,7 @@ th, td {
     border-collapse:separate ;
     border: 1px solid black;
     text-align: center;
-    background-color: none;
+    background-color: transparent;
 }
 
        
@@ -61,10 +61,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: ;
+    background-color:transparent;
 }
 nav button {
-    margin .2rem 2%;
+    margin: .2rem 2%;
     background-color: transparent;
     border: none;  
     font-size: 1.6rem;
