@@ -27,7 +27,7 @@ header {
    
 }
 header h1 {
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
     font-size: 2em;
     margin: 1.25rem auto;
     padding: .5rem;
@@ -38,7 +38,7 @@ header img {
 }
 
 header .subheading {
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
     font-size: 1em;
 }
 
