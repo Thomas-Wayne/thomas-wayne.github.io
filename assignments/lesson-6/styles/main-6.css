@@ -138,13 +138,6 @@ table td img{
     
 }
 
-table figure.currentimage{
-    text-align: "center";
-}
-table figure.currentimage img {
-    width: :100%
-}
-
 .article{
     display: inline-block;
     text-align: left;
