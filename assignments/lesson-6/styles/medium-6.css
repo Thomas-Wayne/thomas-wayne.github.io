@@ -7,8 +7,8 @@
     header {
         background-color: deepskyblue; 
         color: white;
-        margin: 1.25rem auto;
-        padding: .25rem;
+        margin: 1rem auto;
+        padding: .25rem;  
         max-width: inherit;
         text-align: center;
         border: 1px solid black;
@@ -44,10 +44,8 @@
         border: none;
         text-align: center;
         color: white;
-        padding: 2%;   
+        padding: 1%;   
         border-collapse:separate;
-        
-       
 }
     nave ul li a{
         border: none;
