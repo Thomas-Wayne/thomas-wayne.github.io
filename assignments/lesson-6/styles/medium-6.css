@@ -20,15 +20,11 @@
         float:left;
         width:inherit;
 }
-
-    
     main figure.franklinimage {
         padding: .25rem;
-       
 }
     main figure.franklinimage img{
         width: 100%;
-        
 }
     nav button {
         display:none;
@@ -38,11 +34,7 @@
 }
     nav {
         display: inline;
-     
 }
-    nav ul.justify-content-end {
-        min-width: :200px;
-    }
     nav ul li {
         float:left;
         border: none;
@@ -61,7 +53,7 @@
         padding: .25rem;
 }
   
-  section.forecast { 
+    section.forecast { 
       display: block; 
 }  /* show the 10-day forecast with the medium view and up */
 

@@ -24,52 +24,43 @@ header {
     border: 1px solid black;
     word-spacing: normal;
     line-height: 2em;
-   
 }
 header h1 {
     font-family: 'Anton', sans-serif;
     font-size: 2em;
     margin: 1.25rem auto;
     padding: .5rem;
-    
 }
 header img {
     display: none;
 }
-
 header .subheading {
     font-family: 'Anton', sans-serif;
     font-size: 1em;
 }
-
 table {
     border-collapse:separate ;
     width: 100%;
 }
-
 th, td {
     width:auto;
     border-collapse:separate ;
     border: 1px solid black;
     text-align: center;
     background-color: transparent;
-}
-
-       
+}       
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color:deepskyblue;
-   
 }
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;  
     font-size: 1.6rem;
-    
 }
 nav {
     background-color: transparent;
@@ -103,11 +94,9 @@ nav ul li a:hover {
 nav ul.hide {
     display:none;
 }
-
 section.forecast{
     display: none;
 }
-
 main {
     text-align: center;
     border-bottom: 1px solid #555;
@@ -120,7 +109,6 @@ main figure {
     margin: 0 0 0;
     width:auto; 
 }
-
 main figure.franklinimage{
     width: 100%;
     margin: 0%;
@@ -130,15 +118,12 @@ main figure.franklinimage{
 main figure.franklinimage img{
     width: 100%;   
 }
-
 table td img{
     width: 30%;
     height: auto;
     float: top;
     padding: .25rem;
-    
 }
-
 .article{
     display: inline-block;
     text-align: left;
@@ -147,17 +132,13 @@ article p.town-article img {  /* This structure refers to img elements that are 
     width: 100%;
     float:none;
 }
-
-
 footer {
-    
     clear: both;
     text-align: center;
 	padding: 1em;
 	background-color: deepskyblue;
 	color: #fff;
     font-size: .8rem;
-    
 }
 footer aside {
     clear: both;
@@ -166,7 +147,6 @@ footer aside {
 	background-color: skyblue;
 	color: #fff;
     font-size: .8rem;
-    
 }
 .clearfix:after {
     content: "";
