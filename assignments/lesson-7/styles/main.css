@@ -136,7 +136,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 footer {
     flex: 1 1 100%;
-    flex-flow: row wrap;
+    flex-flow:row wrap;
     text-align: center;
     background-color: deepskyblue;
     color: white;
