@@ -91,6 +91,11 @@ nav ul li a:hover {
 nav ul.hide {
     display:none;
 }
+.weatherSummary{
+    display: block;
+    flex: 1 1 100%;
+    padding: 2%;
+}
 .current{
     display: flex;
     flex: 1 1 100%;;
