@@ -152,19 +152,15 @@ footer aside {
      grid-template-columns:repeat(1, 100%);        
 }
 .imageGallery figure {    
-    margin: 2rem 0;
-    
+    margin: 2rem 0;    
 }
 .imageGallery figure img {    
     width: 96%;
 }
 .imageGallery figure figcaption { 
     text-align: center;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;    
 }
-
-
 .clearfix:after {
     content: "";
     display: block;
