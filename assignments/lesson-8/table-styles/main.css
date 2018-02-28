@@ -1,0 +1,60 @@
+* { box-sizing: border-box;}
+body {
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+main { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: fill;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+table {
+    display:table-column;
+    border-collapse:collapse;
+    width: 25rem;
+}
+th, td {
+    border-collapse:collapse;
+    border: 1px solid black;
+    text-align: center;
+} 
+section.ACME { 
+    display: flex; 
+    flex-flow: row nowrap; 
+    justify-content: space-around;
+}
+
+tbody tr:nth-child(even) {
+    background: #e7ffed;
+}
+tbody tr:nth-child(odd) {
+    background:#e7f0ed;
+}
+td:hover{
+    background: #628ca6;
+    color: white;
+}
+thead tr:nth-child(2) {
+    background: #628ca6;
+    color: white;
+}
+thead tr:first-child{
+    background: #7fb9c2;
+}
+tfoot tr{    
+    background: #7fb9c2;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
