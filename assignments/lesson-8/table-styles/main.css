@@ -17,7 +17,9 @@ main {
     padding: 0;
 }
 table {
-    display:table-column;
+    display: table; 
+    flex-flow: row nowrap; 
+    justify-content: space-around;
     border-collapse:collapse;
     width: 25rem;
 }
@@ -26,21 +28,19 @@ th, td {
     border: 1px solid black;
     text-align: center;
 } 
-section.ACME { 
-    display: flex; 
-    flex-flow: row nowrap; 
-    justify-content: space-around;
-}
-
 tbody tr:nth-child(even) {
     background: #e7ffed;
 }
 tbody tr:nth-child(odd) {
     background:#e7f0ed;
 }
-td:hover{
+.hglight{
     background: #628ca6;
     color: white;
+}
+td:hover{
+background: #628ca6;
+color: white;
 }
 thead tr:nth-child(2) {
     background: #628ca6;
