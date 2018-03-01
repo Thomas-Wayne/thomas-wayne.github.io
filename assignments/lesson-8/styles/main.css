@@ -161,10 +161,11 @@ footer aside {
     text-align: center;
     color: yellow;
     background-color: darkblue;
+}
 
 fieldset{
     margin:1em;
-    background-color: lightskyblue
+    background-color: lightskyblue;
    }
 legend{
     border: black solid 2px;
