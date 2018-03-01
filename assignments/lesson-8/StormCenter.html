@@ -41,9 +41,9 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <div><label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Za-z]{5,}" required title="Please provide your full name.(minimum of 5 characters)"></span></label> </div>
+            <div><label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Za-z]{5,99}" required title="Please provide your full name.(minimum of 5 characters)"></span></label> </div>
             <div><label><span>Email Address: <input type = "email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" value="" placeholder="email@address.com" required> </span></label></div>
-            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" pattern="[0-9]{,10}" required> </span></label></div>
+            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" pattern="[0-9]{7,10}" required> </span></label></div>
             <div><label><span> Zip Code: <input type = "number" name="zipcode" pattern="[0-9]{6,10}" value="" placeholder="Zip code" required> </span></label></div>
         </fieldset>
         <fieldset>
