@@ -41,7 +41,7 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Za-z]{5,}" required></span></label>
+            <label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Z,a-z]{5,}" required></span></label>
             <label><span>Email Address: <input type = "email" name="email" value="" placeholder="email@address.com" required> </span></label>
             <label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" required> </span></label>
             <label><span> Zip Code: <input type = "number" name="zipcode" value="" placeholder="Zip code" required> </span></label>
@@ -49,7 +49,7 @@
         <fieldset>
             <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date: <input type = "date" name="date" value=""></span></label>
-                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type"value="" placeholder="Please select..."></span></label>
+                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type" value="" placeholder="Please select..."></span></label>
                     <datalist id="stormType">
                         <option value="Heavy Rain"></option>
                         <option value="Flash Flood"></option>
