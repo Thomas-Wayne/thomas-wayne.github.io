@@ -41,15 +41,15 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Z,a-z]{5,}" required></span></label>
-            <label><span>Email Address: <input type = "email" name="email" value="" placeholder="email@address.com" required> </span></label>
-            <label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" required> </span></label>
-            <label><span> Zip Code: <input type = "number" name="zipcode" value="" placeholder="Zip code" required> </span></label>
+            <div><label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Z,a-z]{5,}" required title="Please provide your full name.( minimum of 5 characters)"></span></label> </div>
+            <div><label><span>Email Address: <input type = "email" name="email" value="" placeholder="email@address.com" required> </span></label></div>
+            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" pattern="[0-9]{,10}" required> </span></label></div>
+            <div><label><span> Zip Code: <input type = "number" name="zipcode" value="" placeholder="Zip code" pattern="[0-9]{,6}" required> </span></label></div>
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
-                <label><span>Storm Date: <input type = "date" name="date" value=""></span></label>
-                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type" value="" placeholder="Please select..."></span></label>
+                <div> <label><span>Storm Date: <input type = "date" name="date" value=""></span></label></div>
+                <div><label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type" value="" placeholder="Please select..."></span></label>
                     <datalist id="stormType">
                         <option value="Heavy Rain"></option>
                         <option value="Flash Flood"></option>
@@ -60,24 +60,26 @@
                         <option value="Tornado"></option>
                         <option value="Hurricane"></option>
                     </datalist>
-                <label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label>
-                <label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
+               </div>
+               <div>  <label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
+               <div>  <label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
                     <datalist id="StormRegion">
                         <option selected disabled>Please Select ...</option>
                         <option value="Franklin"></option>
                         <option value="Greenville"></option>
                         <option value="Springfield"></option> 
                     </datalist>
+                </div>
                 <section class ="radio">
                             <label><span>Is Anyone in Danger:</span></label> 
                             <label><input type="radio" id="Danger1" name="danger" value="Yes">  Yes</label>
                             <label><input type="radio" id="Danger2" name="danger" value="Maybe">  Maybe</label>
                             <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
                 </section>
-            <label><span>Additional Information: </span></label> 
-                <label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label>
-                <a href="thanks.html"><input type="button" value="Submit" /> </a>
-                <input type="reset" value="Reset" class="resetButton">
+            <div><label><span>Additional Information: </span></label> </div>
+                <div><label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label></div>
+            <div><a href="thanks.html"><input type="button" value="Submit" /> </a></div>
+            <div><input type="reset" value="Reset" class="resetButton"></div>
         </fieldset>
         </form>  
     </main>
