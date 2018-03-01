@@ -160,9 +160,7 @@ footer aside {
     padding:1%;
     text-align: center;
     color: yellow;
-    background-image: url(/lesson-8/images/lightningstrike.jpg);
-    background-size: cover;
-}
+    background-color: darkblue;
 
 fieldset{
     margin:1em;
