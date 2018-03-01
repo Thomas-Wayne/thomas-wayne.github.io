@@ -147,8 +147,7 @@ footer aside {
      grid-template-columns:repeat(1, 100%);        
 }
 .imageGallery figure {    
-    margin: 2rem 0;
-    
+    margin: 2rem 0;    
 }
 .imageGallery figure img {    
     width: 96%;
@@ -156,10 +155,21 @@ footer aside {
 .imageGallery figure figcaption { 
     text-align: center;
     font-family: sans-serif;
+}
+label{
+    display:block;
+    padding: .5rem;
+}
+input[type="radio"]{
     
 }
-
-
+.radio {
+    display:inline-block;
+    align-items: center;
+}
+label textarea {
+    width: 75%;
+}
 .clearfix:after {
     content: "";
     display: block;
