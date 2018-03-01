@@ -38,18 +38,18 @@
             <h1>Storm Center</h1>
             <p> Please let us know about severe weather threats in your area!</p>
         </section>
-        <form action="" method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
+        <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-z\s]{5,}"required></span></label>
-            <label><span>Email Address: <input type = "email" name="email"value=""placeholder="email@address.com"required> </span></label>
-            <label><span>Phone Number: <input type = "tel" name="phonenumber"value=""placeholder="1118882222"required> </span></label>
-            <label><span> Zip Code: <input type = "number" name="zipcode" value=""placeholder="Zip code"required> </span></label>
+            <label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Za-z]{5,}" required></span></label>
+            <label><span>Email Address: <input type = "email" name="email" value="" placeholder="email@address.com" required> </span></label>
+            <label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" required> </span></label>
+            <label><span> Zip Code: <input type = "number" name="zipcode" value="" placeholder="Zip code" required> </span></label>
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date: <input type = "date" name="date" value=""></span></label>
-                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type"value=""placeholder="Please select..."></span></label>
+                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type"value="" placeholder="Please select..."></span></label>
                     <datalist id="stormType">
                         <option value="Heavy Rain"></option>
                         <option value="Flash Flood"></option>
@@ -77,7 +77,7 @@
             <label><span>Additional Information: </span></label> 
                 <label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label>
                 <a href="thanks.html"><input type="button" value="Submit" /> </a>
-                <input type="reset"value="Reset" class="resetButton">
+                <input type="reset" value="Reset" class="resetButton">
         </fieldset>
         </form>  
     </main>
