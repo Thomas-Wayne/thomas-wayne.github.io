@@ -131,14 +131,14 @@ article p.town-article img {  /* This structure refers to img elements that are 
 }
 footer {
     flex: 1 1 100%;
-    flex-direction: row wrap;
+    flex-flow:row wrap;
     text-align: center;
     background-color: deepskyblue;
     color: white;
 }
 footer aside {
     flex: 1 1 100%;
-    justify-content: bottom;   
+    justify-content:space-around;   
 }
 /* Gallery.HTML CSS */
 .imageGallery{
@@ -156,6 +156,8 @@ footer aside {
     text-align: center;
     font-family: sans-serif;
 }
+
+/*Storm Center*/
 .stormCenter{
     padding:1%;
     text-align: center;
