@@ -156,12 +156,28 @@ footer aside {
     text-align: center;
     font-family: sans-serif;
 }
+.stormCenter{
+    padding:1%;
+    text-align: center;
+    color: yellow;
+    background-image: url(/lesson-8/images/lightningstrike.jpg);
+    background-size: cover;
+}
+
+fieldset{
+    margin:1em;
+    background-color: lightskyblue
+   }
+legend{
+    border: black solid 2px;
+    border-radius: .6rem;
+    padding: 0 .5rem 0 .5rem;
+    background-color: darkblue;
+    color:yellow;
+}
 label{
     display:block;
     padding: .5rem;
-}
-input[type="radio"]{
-    
 }
 .radio {
     display:inline-block;

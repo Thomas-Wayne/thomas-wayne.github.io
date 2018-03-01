@@ -24,16 +24,20 @@
     <!-- site navigation use placeholder references -->
     <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul  id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="franklin-8.html">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li class="active"><a href="StormCenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>		
+            <ul  id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li class="active"><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>		
     </nav>
     <main class="clearfix">
+        <section class="stormCenter">
+            <h1>Storm Center</h1>
+            <p> Please let us know about severe weather threats in your area!</p>
+        </section>
         <form action="" method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
@@ -44,32 +48,32 @@
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
-            <label><span>Storm Date: <input type = "date" name="date" value=""></span></label>
-            <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type"value=""placeholder="Please select..."></span></label>
-                <datalist id="stormType">
-                    <option value="Heavy Rain"></option>
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="High Winds"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Snow"></option>                       
-                    <option value="Tornado"></option>
-                    <option value="Hurricane"></option>
-                </datalist>
-            <label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label>
-            <label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
-                <datalist id="StormRegion">
-                    <option selected disabled>Please Select ...</option>
-                    <option value="Franklin"></option>
-                    <option value="Greenville"></option>
-                    <option value="Springfield"></option> 
-                </datalist>
-            <section class ="radio">
-                        <label><span>Is Anyone in Danger:</span></label> 
-                        <label><input type="radio" id="Danger1" name="danger" value="Yes">  Yes</label>
-                        <label><input type="radio" id="Danger2" name="danger" value="Maybe">  Maybe</label>
-                        <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
-            </section>
+                <label><span>Storm Date: <input type = "date" name="date" value=""></span></label>
+                <label><span>Storm Type: <input list = "stormType" id="storm" name="Storm Type"value=""placeholder="Please select..."></span></label>
+                    <datalist id="stormType">
+                        <option value="Heavy Rain"></option>
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="High Winds"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Snow"></option>                       
+                        <option value="Tornado"></option>
+                        <option value="Hurricane"></option>
+                    </datalist>
+                <label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label>
+                <label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
+                    <datalist id="StormRegion">
+                        <option selected disabled>Please Select ...</option>
+                        <option value="Franklin"></option>
+                        <option value="Greenville"></option>
+                        <option value="Springfield"></option> 
+                    </datalist>
+                <section class ="radio">
+                            <label><span>Is Anyone in Danger:</span></label> 
+                            <label><input type="radio" id="Danger1" name="danger" value="Yes">  Yes</label>
+                            <label><input type="radio" id="Danger2" name="danger" value="Maybe">  Maybe</label>
+                            <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
+                </section>
             <label><span>Additional Information: </span></label> 
                 <label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label>
                 <a href="thanks.html"><input type="button" value="Submit" /> </a>
