@@ -38,7 +38,7 @@
             <h2>Storm Center</h2>
             <p> Please let us know about severe weather threats in your area!</p>
         </section>
-        <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
             <div><label><span>Full Name:</span> <input type="text" name="name" placeholder="Full Name" pattern="[A-Za-z\s]{5,}" required autofocus title="This field must contain at minimum of 5 letters"></label></div>
@@ -78,7 +78,7 @@
                 </div>
             <div><label><span>Additional Information: </span></label> </div>
                 <div><label><textarea name="additionalInformation" placeholder="Enter text  here..."></textarea></label></div>
-            <div><input type="submit" value="Submit" class="submitButton" ></div>
+                <button type="submit">Submit</button>         
             <div><input type="reset" value="Reset" class="resetButton"></div>
         </fieldset>
         </form>  
