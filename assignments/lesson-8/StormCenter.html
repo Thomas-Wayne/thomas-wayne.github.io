@@ -41,10 +41,10 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <div><label><span>Full Name: <input type = "text" name="firstname" value="" placeholder="Full Name" pattern="[A-Za-z]{5,99}" required></span></label></div>
-            <div><label><span>Email Address: <input type = "email" name="email" placeholder="email@address.com" required> </span></label></div>
-            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" value="" placeholder="1118882222" pattern="[0-9]{7,10}" required> </span></label></div>
-            <div><label><span> Zip Code: <input type = "number" name="zipcode" placeholder="Zip code" required></span></label></div>
+            <div><label><span>Full Name: <input type = "text" name="firstname" pattern=[A-z\s]{5,99} placeholder="Full Name" required title="This field must contain at minimum of 5 letters"></span></label></div>
+            <div><label><span>Email Address: <input type = "email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."> </span></label></div>
+            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" pattern=[0-9]{7,10} placeholder="1118882222" required title="Please enter a valid phone number."> </span></label></div>
+            <div><label><span> Zip Code: <input type = "number" name="zipcode" pattern=[0-9]{5,9} placeholder="Zip code" required title="Please enter a valid zip code."></span></label></div>
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
@@ -61,8 +61,8 @@
                         <option value="Hurricane"></option>
                     </datalist>
                </div>
-               <div>  <label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
-               <div>  <label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
+               <div><label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
+               <div><label><span>Storm Region: <input list = "StormRegion" id = "region" name="Storm Region"></span></label>
                     <datalist id="StormRegion">
                         <option selected disabled>Please Select ...</option>
                         <option value="Franklin"></option>
@@ -70,15 +70,15 @@
                         <option value="Springfield"></option> 
                     </datalist>
                 </div>
-                <section class ="radio">
+                <div class ="radio">
                             <label><span>Is Anyone in Danger:</span></label> 
                             <label><input type="radio" id="Danger1" name="danger" value="Yes">  Yes</label>
                             <label><input type="radio" id="Danger2" name="danger" value="Maybe">  Maybe</label>
                             <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
-                </section>
+                </div>
             <div><label><span>Additional Information: </span></label> </div>
                 <div><label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label></div>
-            <div><a href="thanks.html"><input type="button" value="Submit" /> </a></div>
+            <div><input href="thanks.html" type="submit" value="Submit" class="submitButton" ></div>
             <div><input type="reset" value="Reset" class="resetButton"></div>
         </fieldset>
         </form>  
