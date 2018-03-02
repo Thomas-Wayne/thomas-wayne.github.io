@@ -41,10 +41,10 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <div><label><span>Full Name: <input type = "text" name="firstname" pattern=[A-z\s]{5,99} placeholder="Full Name" required title="This field must contain at minimum of 5 letters"></span></label></div>
+            <div><label><span>Full Name: <input type = "text" name="firstname" pattern="[A-z\s]{5,99}" placeholder="Full Name" required title="This field must contain at minimum of 5 letters"></span></label></div>
             <div><label><span>Email Address: <input type = "email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."> </span></label></div>
-            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" pattern=[0-9]{7,10} placeholder="1118882222" required title="Please enter a valid phone number."> </span></label></div>
-            <div><label><span> Zip Code: <input type = "number" name="zipcode" pattern=[0-9]{5,9} placeholder="Zip code" required title="Please enter a valid zip code."></span></label></div>
+            <div><label><span>Phone Number: <input type = "tel" name="phonenumber" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid phone number."> </span></label></div>
+            <div><label><span> Zip Code: <input type = "number" name="zipcode" pattern="[0-9]{5,9}" placeholder="Zip code" required title="Please enter a valid zip code."></span></label></div>
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
@@ -78,7 +78,7 @@
                 </div>
             <div><label><span>Additional Information: </span></label> </div>
                 <div><label><span><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></span></label></div>
-            <div><input href="thanks.html" type="submit" value="Submit" class="submitButton" ></div>
+            <div><input type="submit" value="Submit" class="submitButton" ></div>
             <div><input type="reset" value="Reset" class="resetButton"></div>
         </fieldset>
         </form>  
