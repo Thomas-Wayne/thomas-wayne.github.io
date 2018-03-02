@@ -41,15 +41,15 @@
         <form method="post" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
         <fieldset>
             <legend><span>Contact Information</span></legend>   
-            <div><label><span>Full Name:</span> <input type = "text" name="name" placeholder="Full Name" pattern="[A-Za-z\s]{5,}" required autofocus title="This field must contain at minimum of 5 letters"></label></div>
-            <div><label><span>Email Address:</span> <input type = "email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."></label></div>
-            <div><label><span>Phone Number:</span> <input type = "tel" name="phone" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid phone number."> </label></div>
-            <div><label><span> Zip Code:</span> <input type = "number" name="zipcode" placeholder="Zip code" required title="Please enter a valid zip code."></label></div>
+            <div><label><span>Full Name:</span> <input type="text" name="name" placeholder="Full Name" pattern="[A-Za-z\s]{5,}" required autofocus title="This field must contain at minimum of 5 letters"></label></div>
+            <div><label><span>Email Address:</span> <input type="email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."></label></div>
+            <div><label><span>Phone Number:</span> <input type="tel" name="phone" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid phone number."> </label></div>
+            <div><label><span> Zip Code:</span> <input type="number" name="zipcode" placeholder="Zip code" required title="Please enter a valid zip code."></label></div>
         </fieldset>
         <fieldset>
             <legend><span>Storm Information</span></legend>
-                <div> <label><span>Storm Date:</span><input type = "date" name="date" value=""></label></div>
-                <div><label><span>Storm Type:</span><input list = "stormType" id="storm" name="Storm Type" placeholder="Please select..."></label>
+                <div> <label><span>Storm Date:</span><input type="date" name="date" value=""></label></div>
+                <div><label><span>Storm Type:</span><input list="stormType" id="storm" name="Storm Type" placeholder="Please select..."></label>
                     <datalist id="stormType">
                         <option value="Heavy Rain"></option>
                         <option value="Flash Flood"></option>
@@ -62,7 +62,7 @@
                     </datalist>
                </div>
                <div><label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
-               <div><label><span>Storm Region: </span><input list = "StormRegion" id = "region" name="Storm Region" placeholder="Please select..."></label>
+               <div><label><span>Storm Region: </span><input list="StormRegion" id="region" name="Storm Region" placeholder="Please select..."></label>
                     <datalist id="StormRegion">
                         <option selected disabled>Please Select ...</option>
                         <option value="Franklin"></option>
@@ -77,7 +77,7 @@
                             <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
                 </div>
             <div><label><span>Additional Information: </span></label> </div>
-                <div><label><textarea name= "additionalInformation" placeholder="Enter text  here..."></textarea></label></div>
+                <div><label><textarea name="additionalInformation" placeholder="Enter text  here..."></textarea></label></div>
             <div><input type="submit" value="Submit" class="submitButton" ></div>
             <div><input type="reset" value="Reset" class="resetButton"></div>
         </fieldset>
