@@ -1,0 +1,40 @@
+{
+  "squadName": "Super Heroes Unlimited",
+  "homeTown": "Places unknown",
+  "formed": 2016,
+  "secretBase": "The Underground",
+  "active": true,
+  "members": [
+    {
+      "name": "Mister Freeze",
+      "age": 22,
+      "secretIdentity": "Bob Warmheart",
+      "powers": [
+        "Project web shaped ice nets",
+        "Can withstand hours of sub-artic temperatures in nothing but shorts and a t-shirt",
+        "Excellent at Ice sculptures"
+      ]
+    },
+    {
+      "name": "Starborn",
+      "age": 42,
+      "secretIdentity": "Dorothy Jane",
+      "powers": [
+        "Capable of mind control",
+        "Immune to pain",
+        "Lifts things with just a thought",
+        "Can see things happen before they do."
+      ]
+    },
+    {
+      "name": "Pyro",
+      "age": 19,
+      "secretIdentity": "Micky Nick",
+      "powers": [
+        "Heat Immunity",
+        "Inferno",
+        "A bit of a wreckloose, but works well with Mister Freeze."
+      ]
+    }
+  ]
+}
