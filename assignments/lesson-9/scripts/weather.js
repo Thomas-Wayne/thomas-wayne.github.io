@@ -53,7 +53,7 @@ weatherObject10day.onload = function () {
             
             document.getElementById('weathericon').src = weatherInfo.forecast.simpleforecast.forecastday[0].icon_url;
             document.getElementById('tempHigh').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit;
-            document.getElementById('tempLow0').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].low.fahrenheit;
+            document.getElementById('tempLow').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].low.fahrenheit;
                        
           }
   }*/
