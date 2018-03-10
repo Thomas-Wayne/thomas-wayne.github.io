@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blue Skies Weather Site</title>
     <meta name="author" content="Wayne Thomas">
-    <meta name="description" content="Thank you page">
+    <meta name="description" content="Franklin">
     <!-- external style references in the proper cascading order -->  
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -25,17 +25,17 @@
     <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul  id="primaryNav" class="hide">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
-            <li class="active"><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>		
     </nav>
     <main class="clearfix">
-        <h2> Thank You!</h2>
-            <p>Thank you for letting us know about the weather in your area! </p>
+        <section id="townInfo"></section>
+     	
     </main>
     <footer class="clearfix">
         <aside>
@@ -47,6 +47,9 @@
         </aside>
         <p class="footer-bar">&copy;2018 | Blue Skies Weather | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
-   <script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/towndata.js"></script>
+        
 </body>
 </html>

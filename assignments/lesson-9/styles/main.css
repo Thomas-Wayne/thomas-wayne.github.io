@@ -100,7 +100,7 @@ nav ul.hide {
 }
 .current.figure{
     align-self:center;
-}
+ }
 .forecast{
     display: none;
 }
@@ -191,6 +191,12 @@ label{
 label textarea {
     width: 75%;
 }
+#townInfo{
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns:repeat(3, 33%);
+}
+
 .clearfix:after {
     content: "";
     display: block;
