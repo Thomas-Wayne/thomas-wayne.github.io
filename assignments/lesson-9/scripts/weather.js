@@ -35,7 +35,7 @@ weatherObjectday.onload = function () {
 
 var weatherObject10day = new XMLHttpRequest();
 
-weatherObject10day.open('GET', 'http://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/MN/Franklin.json', true);
+weatherObject10day.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/MN/Franklin.json', true);
 
 weatherObject10day.send();
 
