@@ -46,4 +46,36 @@
          display: grid;
          grid-template-columns:repeat(2, 50%);        
 }
+    #townInfo{
+        display: grid;
+        grid-template-columns:repeat(3, 33%);
+        width: fill;
+        align-content: center;
+}
+    #townInfo img{
+        display: grid;
+        margin: 1%;
+        border-radius: 2%;
+        grid-template-columns:repeat(3, 33%);       
+}
+    #franklinspring img{
+        width: 98%;
+}
+    #greenville img{
+        width: 98%;
+}
+    #springfield img{
+        width: 98%;
+}
+    #weather-story #story{
+        flex: 1 1 100%;
+        text-align: left;
+        padding: 2%; 
+}
+    #weather-story #story img{
+        margin: 1%;
+        width: 50%;
+        float:right;        
+}
+    
 }
