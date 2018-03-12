@@ -47,20 +47,16 @@ weatherObject10day.onload = function () {
           var forecastbyday = jsonObj['forecastday'];
 
           for (var i = 0; i < forecastday.length; i++) {
-            var weathericon = document.createElement('p');
-            var tempHigh = document.createElement('p');
-            var tempLow = document.createElement('p');
-            
-            document.getElementById('weathericon').src = weatherInfo.forecast.simpleforecast.forecastday[0].icon_url;
-            document.getElementById('tempHigh').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit;
-            document.getElementById('tempLow').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].low.fahrenheit;
+            document.getElementById('weathericon[i]').src = weatherInfo.forecast.simpleforecast.forecastday[i].icon_url;
+            document.getElementById('tempHigh[i]').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[i].high.fahrenheit;
+            document.getElementById('tempLow[i]').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[i].low.fahrenheit;
                        
-          }
-  }*/
+         }
+  }*/ 
    
    
 
-    document.getElementById('weathericon0').src = weatherInfo.forecast.simpleforecast.forecastday[0].icon_url;
+    document.getElementById('weathericon0').src =   weatherInfo.forecast.simpleforecast.forecastday[0].icon_url;
     document.getElementById('high0').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit;
     document.getElementById('low0').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].low.fahrenheit;
     
