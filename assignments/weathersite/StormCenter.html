@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Skies Weather Site</title>
+    <meta name="author" content="Wayne Thomas">
+    <meta name="description" content="Storm Center">
+    <!-- external style references in the proper cascading order -->  
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header class="clearfix">
+        <img src="images/blueskies.jpg" alt="Blue Skies Picture">
+        <h1>Blue Skies Weather</h1>
+        <div class="subheading">Accurate Up to the Minute Forecast You Can Count On</div>        
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul  id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li class="active"><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>		
+    </nav>
+    <main class="clearfix">
+        <section class="stormCenter">
+            <h2>Storm Center</h2>
+            <p> Please let us know about severe weather threats in your area!</p>
+        </section>
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormcenter" id= "submissionform">
+        <fieldset>
+            <legend><span>Contact Information</span></legend>   
+            <div><label><span>Full Name:</span> <input type="text" name="name" placeholder="Full Name" pattern="[A-Za-z\s]{5,}" required autofocus title="This field must contain at minimum of 5 letters"></label></div>
+            <div><label><span>Email Address:</span> <input type="email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."></label></div>
+            <div><label><span>Phone Number:</span> <input type="tel" name="phone" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid phone number."> </label></div>
+            <div><label><span> Zip Code:</span> <input type="number" name="zipcode" placeholder="Zip code" required title="Please enter a valid zip code."></label></div>
+        </fieldset>
+        <fieldset>
+            <legend><span>Storm Information</span></legend>
+                <div> <label><span>Storm Date:</span><input type="date" name="date" value=""></label></div>
+                <div><label><span>Storm Type:</span><input list="stormType" id="storm" name="Storm Type" placeholder="Please select..."></label>
+                    <datalist id="stormType">
+                        <option value="Heavy Rain"></option>
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="High Winds"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Snow"></option>                       
+                        <option value="Tornado"></option>
+                        <option value="Hurricane"></option>
+                    </datalist>
+               </div>
+               <div><label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
+               <div><label><span>Storm Region: </span><input list="StormRegion" id="region" name="Storm Region" placeholder="Please select..."></label>
+                    <datalist id="StormRegion">
+                        <option selected disabled>Please Select ...</option>
+                        <option value="Franklin"></option>
+                        <option value="Greenville"></option>
+                        <option value="Springfield"></option> 
+                    </datalist>
+                </div>
+                <div class ="radio">
+                            <label><span>Is Anyone in Danger:</span></label> 
+                            <label><input type="radio" id="Danger1" name="danger" value="Yes">  Yes</label>
+                            <label><input type="radio" id="Danger2" name="danger" value="Maybe">  Maybe</label>
+                            <label><input type="radio" id="Danger3" name="danger" value="No">  No</label> 
+                </div>
+            <div><label><span>Additional Information: </span></label> </div>
+                <div><label><textarea name="additionalInformation" placeholder="Enter text  here..."></textarea></label></div>
+                <button type="submit">Submit</button>         
+            <div><input type="reset" value="Reset" class="resetButton"></div>
+        </fieldset>
+        </form>  
+    </main>
+    <footer class="clearfix">
+        <aside>
+            Blue Skies Weather
+            123 Main Street
+            Franklin, MY 89888
+            (999)999-9999
+            contact@bsw.com
+        </aside>
+        <p class="footer-bar">&copy;2018 | Blue Skies Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

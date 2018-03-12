@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Skies Weather Site</title>
+    <meta name="author" content="Wayne Thomas">
+    <meta name="description" content="springfield">
+    <!-- external style references in the proper cascading order -->  
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header class="clearfix">
+        <img src="images/blueskies.jpg" alt="Blue Skies Picture">
+        <h1>Blue Skies Weather</h1>
+        <div class="subheading">Accurate Up to the Minute Forecast You Can Count On</div>        
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul  id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li class="active"><a href="springfield.html">Springfield</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main class="clearfix">
+        <h2>Weather Conditions for <span id="place"> City, State</span></h2>
+        <figure class="franklinimage">
+            <img src="images/franklin.jpg" alt="franklin" sizes = "100vw"
+            srcset="images/franklin500.jpg 500w,
+            images/franklin800.jpg 800w,
+            images/franklin1200.jpg 1200w">
+        </figure>
+        <section class="clearfix"> 
+            <div class= "weatherSummary">
+                <h3>Weather Summary</h3>
+                <figure><img src="" alt="current weather" id = "weather_icon"></figure>
+            </div>
+                <ul id="currentForecast" class="current">                    
+        
+                    <li>Current Temperature is <strong><span id="currentTemp"> 120</span>&deg;</strong></li>
+                    <li>Currently it is: <strong><span id="weather"></span></strong> </li>
+                    <li>High:<strong><span id="high"></span>&deg;F</strong></li>
+                    <li>Low:<strong><span id="low"></span>&deg;F</strong></li>    
+                    <li>Precipitation:<strong><span id="precip"></span> inches</strong> </li>
+                    <li>Wind Speed:<strong><span id="winddir"></span>  <span id="wind"></span></strong> </li>
+                    <li> Wind Chill: <strong ><span id="windchill"></span>&deg;</strong> </li>
+                </ul>
+        </section>
+        <section class="forecast">
+            <table class="clearfix">
+            <thead>
+                <tr>
+                    <td colspan ="10">
+                    <h3>10 Day Forecast</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                    <th>Day 3</th>
+                    <th>Day 4</th>
+                    <th>Day 5</th>
+                    <th>Day 6</th>
+                    <th>Day 7</th>
+                    <th>Day 8</th>
+                    <th>Day 9</th>
+                    <th>Day 10</th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr>
+                    <td><img src="" alt="day 1 weather" id = "weathericon0"> <br>High <span id="high0">&deg;F </span><br>Low <span id="low0">&deg;F </span></td>
+                    <td><img src="" alt="day 2 weather" id = "weathericon1"> <br>High <span id="high1">&deg;F </span><br>Low <span id="low1">&deg;F </span></td>
+                    <td><img src="" alt="day 3 weather" id = "weathericon2"> <br>High <span id="high2">&deg;F </span><br>Low <span id="low2">&deg;F </span></td>
+                    <td><img src="" alt="day 4 weather" id = "weathericon3"> <br>High <span id="high3">&deg;F </span><br>Low <span id="low3">&deg;F </span></td>
+                    <td><img src="" alt="day 5 weather" id = "weathericon4"> <br>High <span id="high4">&deg;F </span><br>Low <span id="low4">&deg;F </span></td>
+                    <td><img src="" alt="day 6 weather" id = "weathericon5"> <br>High <span id="high5">&deg;F </span><br>Low <span id="low5">&deg;F </span></td>
+                    <td><img src="" alt="day 7 weather" id = "weathericon6"> <br>High <span id="high6">&deg;F </span><br>Low <span id="low6">&deg;F </span></td>
+                    <td><img src="" alt="day 8 weather" id = "weathericon7"> <br>High <span id="high7">&deg;F </span><br>Low <span id="low7">&deg;F </span></td>
+                    <td><img src="" alt="day 9 weather" id = "weathericon8"> <br>High <span id="high8">&deg;F </span><br>Low <span id="low8">&deg;F </span></td>
+                    <td><img src="" alt="day 10 weather" id = "weathericon9"> <br>High <span id="high9">&deg;F </span><br>Low <span id="low9">&deg;F </span></td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <article class="clearfix">
+            <h2>Celebration of Life April 10th-20th</h2>
+
+            <p class="town-article">
+                <img src="images/franklintowncouncil.jpg" alt="franklinTownCouncil Picture" sizes="50vw"
+                srcset="images/franklintowncouncil200.jpg 200w,
+                images/franklintowncouncil500.jpg 500w,
+                images/franklintowncouncil800.jpg 800w,
+                images/franklintowncouncil1200.jpg 1200w">
+            </p>
+            
+
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+        </article>	
+    </main>
+    <footer class="clearfix">
+        <aside>
+            Blue Skies Weather
+            123 Main Street
+            Franklin, MY 89888
+            (999)999-9999
+            contact@bsw.com
+        </aside>
+        <p class="footer-bar">&copy;2018 | Blue Skies Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/weatherspringfield.js"></script>
+
+    
+    
+</body>
+</html>

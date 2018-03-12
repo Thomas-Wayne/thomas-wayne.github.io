@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Skies Weather Site</title>
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->  
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header class="clearfix">
+        <img src="images/blueskies.jpg" alt="Blue Skies Picture">
+        <h1>Blue Skies Weather</h1>
+        <div class="subheading">Accurate Up to the Minute Forecast You Can Count On</div>        
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul  id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="StormCenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>		
+    </nav>
+    <main class="clearfix">
+        <h1>Gallery</h1>
+        <section class="imageGallery">
+            <figure class="image">
+                <img src="images/gallery/adayinthefield%20400.jpg" alt="A day in the field.">
+                <figcaption><strong>A day in the field</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/bluebells400.jpg" alt="Bluebells">
+                <figcaption> <strong>Bluebells</strong> </figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/coastalwaters400.jpg" alt="Coastal Waters">
+                <figcaption> <strong>Coastal Waters</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/dayatthebeach400.jpg" alt="A day at the beach">
+                <figcaption><strong>A day at the beach</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/greenerpastures400.jpg" alt="Greener Pastures">
+                <figcaption> <strong>Greener Pastures</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/fogrollingin400.jpg" alt="Cloud on the mountains">
+                <figcaption> <strong>Clouds on the mountains</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/sunset400.jpg" alt="sunset">
+                <figcaption> <strong>Beautiful sunset</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/winterwonderland400.jpg" alt="winter wonderland">
+                <figcaption><strong>Winter Wonderland</strong></figcaption>
+            </figure>
+            <figure class="image">
+                <img src="images/gallery/thepoint400.jpg" alt="The Point">
+                <figcaption><strong>The Point</strong></figcaption>
+            </figure>
+        </section>
+        
+    </main>
+    <footer class="clearfix">
+        <aside>
+            Blue Skies Weather
+            123 Main Street
+            Franklin, MY 89888
+            (999)999-9999
+            contact@bsw.com
+        </aside>
+        <p class="footer-bar">&copy;2018 | Blue Skies Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+  <script src="scripts/scripts.js"></script>
+    
+</body>
+</html>

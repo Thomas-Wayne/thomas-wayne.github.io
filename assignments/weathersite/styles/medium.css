@@ -1,0 +1,81 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+     
+    header img{
+        display: block;
+        float:left;
+        width:inherit;
+}
+    nav button {
+        display:none;
+}
+    nav ul.hide {
+       display: flex;
+}
+    nav ul {
+        flex-flow: row nowrap;
+        list-style-type: none;
+}
+    nav ul li {
+        border: none;
+        text-align: center;
+        padding: 2%;   
+        border-collapse:separate;
+}
+    nav ul li a{
+        border: none;
+}
+    section.forecast { 
+        display: flex; 
+        flex-flow: row nowrap; 
+        justify-content: space-around;
+}  /* show the 10-day forecast with the medium view and up */
+
+    .article{        
+        display: flex;
+        margin: 1.25rem;
+        padding: .25rem;
+}
+    article p.town-article img { 
+        width: 50%;
+        float:right;
+}
+    .imageGallery{
+         padding: 0 2%;
+         display: grid;
+         grid-template-columns:repeat(2, 50%);        
+}
+    #townInfo{
+        display: grid;
+        grid-template-columns:repeat(3, 33%);
+        width: fill;
+        align-content: center;
+}
+    #townInfo img{
+        display: grid;
+        margin: 1%;
+        border-radius: 2%;
+        grid-template-columns:repeat(3, 33%);       
+}
+    #franklinspring img{
+        width: 98%;
+}
+    #greenville img{
+        width: 98%;
+}
+    #springfield img{
+        width: 98%;
+}
+    #weather-story #story{
+        flex: 1 1 100%;
+        text-align: left;
+        padding: 2%; 
+}
+    #weather-story #story img{
+        margin: 1%;
+        width: 50%;
+        float:right;        
+}
+    
+}
