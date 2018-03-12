@@ -236,6 +236,7 @@ label textarea {
 }
 #story img{
     width: 98%;
+    border-radius: 5%;
 }
 #weather-story h2{
     align-content: space-around;
