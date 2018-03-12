@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/conditions/q/IL/Springfield.json', true);
+weatherObject.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/conditions/q/OR/Springfield.json', true);
 
 weatherObject.send();
 
@@ -21,7 +21,7 @@ weatherObject.onload = function () {
 
 var weatherObjectday = new XMLHttpRequest();
 
-weatherObjectday.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast/q/IL/Springfield.json', true);
+weatherObjectday.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast/q/OR/Springfield.json', true);
 
 weatherObjectday.send();
 
@@ -35,7 +35,7 @@ weatherObjectday.onload = function () {
 
 var weatherObject10day = new XMLHttpRequest();
 
-weatherObject10day.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/IL/Springfield.json', true);
+weatherObject10day.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/OR/Springfield.json', true);
 
 weatherObject10day.send();
 

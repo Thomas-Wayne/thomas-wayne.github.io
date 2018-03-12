@@ -37,15 +37,15 @@ header .subheading {
     font-size: 1em;
 }
 main {
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 main h2{
     padding:2%;
 }
-main figure.franklinimage img{
+main figure.bannerimage img{
     max-width: 100%;
-    border-radius: 2%
+    border-radius: 2%;
 }
 current ul {
     list-style-type: none;
@@ -83,10 +83,10 @@ nav ul li a {
     color: white; 
 }
 nav ul li.active a {   
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
 }
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.2); 
     color: white;
 }
 nav ul.hide {
@@ -125,11 +125,13 @@ table td img{
 .article{
     flex: 1 1 100%;
     text-align: left;
-    padding: 2%;
+    margin: 1rem;
+    padding: 1rem;
 }
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
-    border-radius: 2%
+    padding: 1rem;
+    border-radius: 5%;
 }
 footer {
     flex: 1 1 100%;
@@ -142,6 +144,8 @@ footer aside {
     flex: 1 1 100%;
     justify-content:space-around;   
 }
+
+
 /* Gallery.HTML CSS */
 .imageGallery{
      padding: 0 2%;
@@ -153,6 +157,7 @@ footer aside {
 }
 .imageGallery figure img {    
     width: 96%;
+    border-radius: 2%;
 }
 .imageGallery figure figcaption { 
     text-align: center;
@@ -221,13 +226,17 @@ label textarea {
 #weather-story{
     flex: 1 1 100%;
     text-align: left;
-    padding: 2%;    
+        
 }
 #weather-story img{
+    max-width: 96%
     margin: 1%;
+    padding 1rem;
     border-radius: 2% 
 }
-
+#story img{
+    width: 98%;
+}
 #weather-story h2{
     align-content: space-around;
     text-align: center;

@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/conditions/q/SC/Greenville.json', true);
+weatherObject.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/conditions/q/TX/Greenville.json', true);
 
 weatherObject.send();
 
@@ -21,7 +21,7 @@ weatherObject.onload = function () {
 
 var weatherObjectday = new XMLHttpRequest();
 
-weatherObjectday.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast/q/SC/Greenville.json', true);
+weatherObjectday.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast/q/TX/Greenville.json', true);
 
 weatherObjectday.send();
 
@@ -35,7 +35,7 @@ weatherObjectday.onload = function () {
 
 var weatherObject10day = new XMLHttpRequest();
 
-weatherObject10day.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/SC/Greenville.json', true);
+weatherObject10day.open('GET', 'https://api.wunderground.com/api/5013cd1f1eba4d2a/forecast10day/q/TX/Greenville.json', true);
 
 weatherObject10day.send();
 
@@ -57,9 +57,7 @@ weatherObject10day.onload = function () {
                        
           }
   }*/
-   
-   
-
+    
     document.getElementById('weathericon0').src = weatherInfo.forecast.simpleforecast.forecastday[0].icon_url;
     document.getElementById('high0').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].high.fahrenheit;
     document.getElementById('low0').innerHTML = weatherInfo.forecast.simpleforecast.forecastday[0].low.fahrenheit;
