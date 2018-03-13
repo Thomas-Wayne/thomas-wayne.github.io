@@ -223,10 +223,14 @@ label textarea {
 #townInfo img{
     display: none;
 }
+
+#townInfo .motto{
+    font-weight: bold;
+} 
+
 #weather-story{
     flex: 1 1 100%;
     text-align: left;
-        
 }
 #weather-story img{
     max-width: 96%;
