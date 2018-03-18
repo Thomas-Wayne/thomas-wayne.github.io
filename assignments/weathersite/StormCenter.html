@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="clearfix">
-        <img src="images/blueskies.jpg" alt="Blue Skies Picture">
+        <a href="index.html"><img src="images/blueskies.jpg" alt="Blue Skies Picture"></a>
         <h1>Blue Skies Weather</h1>
         <div class="subheading">Accurate Up to the Minute Forecast You Can Count On</div>        
     </header>
@@ -61,7 +61,8 @@
                         <option value="Hurricane"></option>
                     </datalist>
                </div>
-               <div><label><span>Storm Severity: 1 <input type="range" name="severityRange" min="0" max="10"> 10</span></label></div>
+               <div><label><span>Storm Severity: <br>0 <input type="range" name="severityRange" min="0" max="10" onchange="updateTextInput(this.value)"> 10 </span><br><input type="text" id= "textInput" value=""></label></div>
+                
                <div><label><span>Storm Region: </span><input list="StormRegion" id="region" name="Storm Region" placeholder="Please select..."></label>
                     <datalist id="StormRegion">
                         <option selected disabled>Please Select ...</option>
