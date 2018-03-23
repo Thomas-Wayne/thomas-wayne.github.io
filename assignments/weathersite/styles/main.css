@@ -175,7 +175,12 @@ h2{
     color: yellow;
     background-color: darkblue;
 }
-
+#textInput{
+    width:10rem;
+    text-align: center;
+    background-color: deepskyblue
+    
+}
 fieldset{
     margin:1em;
     background-color: lightskyblue;
