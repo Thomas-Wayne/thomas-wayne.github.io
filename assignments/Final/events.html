@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events - The Mountain Spoke</title>
+    <meta name="author" content="Wayne Thomas">
+    <meta name="description" content="The Mountain Spoke">
+    <!-- external style references in the proper cascading order -->  
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+    <header class="clearfix">
+        <a href="index.html"><img src="images/logo.png" alt="The Mountain Spoke logo"></a>
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Your outdoor adventure awaits</div>        
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+         <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul  id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="adventuretours.html">Adventure Tours</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="service.html">Service</a></li>               
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>			
+    </nav>
+    <main class="clearfix">
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            
+        </section>
+    <form action="thanks.html" method="get" enctype="multipart/form-data" name="events" id= "submissionform">
+        
+        <section class="eventname">
+            <div><h2> Cycle the Continental Divide</h2></div>
+            <article class="clearfix">
+            <div> <p class="eventname"> <strong>Join us for our annual Cycle the Continental Divide event, Monday May 21st - Saturday May 26th. The event is a rain or shine event so dress appropriately. There is a non-refundable registration fee of $200 for each participant and registration forms must be recieved on or before Saturday May 5th. This years route will have us exploring the 517.6 mile Idaho Hot Springs Mountain Bike Route. We will begin our journey in Idaho City, Idaho. The itinerary, maps of the trail, and a list of recommended items will be provided as part of a welcome package that will be shipped to you prior to the event.  </strong></p></div>
+        <div> <figure>
+                <img src="images/joinus.jpg" alt="three ladies join us picture">
+                <figcaption><strong>We look forward to seeing you there!</strong></figcaption> </figure></div>
+        </article></section>
+        <fieldset>
+            <legend><span>Registration Information</span></legend>   
+            <div><label><span>Full Name:</span> <input type="text" name="name" placeholder="Full Name" pattern="[A-Za-z\s]{5,}" required autofocus title="This field must contain at minimum of 5 letters"></label></div>
+            <div><label><span>Email Address:</span> <input type="email" name="email" placeholder="email@address.com" required title="Please enter a valid email address."></label></div>
+            <div><label><span>Phone Number:</span> <input type="tel" name="phone" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid phone number."> </label></div>
+            <div><label><span>Date of Birth:</span> <input type="date" name="date" pattern="[0-9]{7,10}" placeholder="1118882222" required title="Please enter a valid date of birth."> </label></div>
+            <div><label><span> State/Country of Origin:</span> <input type="text" name="state/country" placeholder="State/Country" pattern="[A-Za-z\s]{5,}" required title="Please enter a valid state/country of origin."></label></div>
+            <div><label><span>Special Accomodations/Additional Information: </span></label> </div>
+                <div><label><textarea name="additionalInformation" placeholder="Enter information  here..."></textarea></label></div>
+            <button type="submit">Submit</button>         
+            <div><input type="reset" value="Reset" class="resetButton"></div>            
+        </fieldset>
+    </form>  
+        
+    </main>
+    <footer class="clearfix">
+        <aside>
+            The Mountain Spoke
+            3950 Valley Commons Drive
+            Bozeman, MT 59715
+            (888)888-8888
+            contactus@themountainspoke.com
+        </aside>
+        <p class="footer-bar">&copy;2018 | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

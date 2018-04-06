@@ -1,0 +1,177 @@
+* { box-sizing: border-box;}
+body {
+    font-size: 16px; 
+    line-height: 32px;
+    margin: 0; 
+    font-family: helvetica, arial,sans-serif;
+    color: black;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: fill;
+}
+header {
+    background-color: #82b553; 
+    color: #f5fbee;
+    margin: 1.25% auto;
+    padding: .5rem;  
+    max-width: inherit;
+    text-align: center;
+    border: 1px solid black;
+    word-spacing: normal;
+    line-height:inherit;
+}
+header h1 {
+    font-family: helvetica, sans-serif;
+    font-size: 2.5em;
+    margin: 1.25rem auto;
+    padding: .5rem;
+    text-shadow: 4px 4px 4px black;
+}
+header img {
+    display: none;
+}
+header .subheading {
+    font-family: helvetica, sans-serif;
+    color: black;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px #f5fbee;
+}
+nav button {
+    display:block;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;  
+    font-size: 1.6rem;
+}
+nav {
+    margin: .2rem auto;
+    background-color: transparent;
+    font-family: helvetica, sans-serif;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: .2rem auto;
+    background-color: transparent;
+    border: none;
+    justify-content: space-around;
+   
+}
+nav ul li {   
+    border-top: none;
+    margin: .rem auto;
+    max-width: 100%;
+}
+nav ul li a {
+    text-decoration: none;
+    border:;
+    color: black; 
+}
+nav ul li.active a {   
+    text-shadow: 2px 2px 2px black;
+    color: #f5fbee;
+}
+nav ul li a:hover {
+    background-color: #df702a; 
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px black;
+    color: #f5fbee;
+}
+nav ul.hide {
+    display:none;
+}
+
+footer {
+    flex: 1 1 100%;
+    border: 2px solid black;
+    flex-flow:row wrap;
+    text-align: center;
+    background-color: #82b553;
+    color: #f5fbee;
+}
+footer aside {
+    flex: 1 1 100%;
+    justify-content:space-around;   
+}
+
+/*Events*/
+
+h2{
+    font-size: 2.5rem;
+}
+.events{
+    padding:1%;
+    text-align: ;
+    color: #f5fbee;
+    background-color: #df702a;
+}
+.eventname{
+    padding:1%;
+}
+#textInput{
+    width:10rem;
+    text-align: center;
+    background-color: #82b553;    
+}
+fieldset{
+    margin:1em;
+    background-color: #f5fbee;
+   }
+legend{
+    border: black solid 2px;
+    border-radius: .6rem;
+    padding: 0 .5rem 0 .5rem;
+    background-color: #82b553;
+    color:#f5fbee;
+}
+label{
+    display:block;
+    padding: .5rem;
+}
+
+label textarea {
+    width: 75%;
+}
+
+/*Contact Us*/
+
+#map iframe{
+    margin:2%;
+    width: 96%;
+    height: 400px;  
+}
+.businesshours{
+    margin:2%;
+    padding: 0 .5rem 0 .5rem;
+    font-family: helvetica, sans-serif;
+    font-style:normal;
+}
+
+.address { 
+    margin:2%;
+    padding: 0 .5rem 0 .5rem;
+    font-family: helvetica, sans-serif;
+    font-style:normal;
+}
+.phone { 
+    margin:2%;
+    padding: 0 .5rem 0 .5rem;
+    font-family: helvetica, sans-serif;
+    font-style:normal;
+}
+.contactus{    
+   padding: 0 2%;
+   display: grid;
+   grid-template-columns:repeat(1, 100%); 
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}

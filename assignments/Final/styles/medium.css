@@ -1,0 +1,57 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header h1 {
+        font-size: 3em;
+        text-shadow: 4px 4px 4px black;
+}    
+    header img{
+        display: block;
+        float:left;
+        width:inherit;
+}
+    header .subheading {
+        font-size: 2em;
+        text-shadow: 4px 4px 4px white;
+}    
+    nav button {
+        display:none;
+}
+    nav ul.hide {
+       display: flex;       
+} 
+    nav ul {
+        flex-flow: row nowrap;
+        list-style-type: none;        
+}    
+    nav ul li a{
+        border: none;
+}
+    nav ul li {
+        border: none;
+        background-color: #82B553;
+        text-align: center;
+        font-size: 1.5em;
+        width: 100%;
+        padding: 1%;   
+        border-collapse:separate;
+}
+    article{        
+        display: flex;
+        margin: .5rem;
+        padding: .25rem;
+}    
+    article p.eventname img { 
+        width: 50%;
+        float:right;
+}
+    .eventname p{
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 2%;
+}
+    .contactus{    
+   padding: 0 2%;
+   display: grid;
+   grid-template-columns:repeat(2, 50%); 
+}
+    
