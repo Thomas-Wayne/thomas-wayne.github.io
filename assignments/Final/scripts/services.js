@@ -1,34 +1,38 @@
-        var section = document.querySelector('section');
-        
-        var request = new XMLHttpRequest();
+             
+/*        var request = new XMLHttpRequest();
         request.open('GET', 'https://thomas-wayne.github.io/assignments/Final/data/services.json', true);
         request.responseType = 'json';
         request.send();
         
-        request.onload = function() {
+        /*request.onload = function() {
             var services = request.response;
-            showData(services);
-        }
-        
-        function showData(jsonObj) {
-          var data = jsonObj['services'];
+            console.log(services);
+        }//end of request*/
 
-          for (var i = 0; i < data.length; i++) {
-                        var myArticle = document.createElement('article');
-            var myH2 = document.createElement('tr, td');
-            var myPara1 = document.createElement('tr, td');
-            
-            
 
-            myH2.textContent = data[i].service;
-            myPara1.textContent = data[i].price;
-            
-
-            }
-
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            
-
-            section.appendChild(myArticle);
-  }
+function onLoad(){
+			var url='https://thomas-wayne.github.io/assignments/Final/data/services.json';
+			$.getJSON(url, function(json){
+				var table = $('<table>');
+				table.attr('border','1');
+				var tr = $('<tr>');
+				var td = $('<td>');
+				td.html("Service");
+				tr.append(td);
+				td = $('<td>');
+				td.html('Price');
+				tr.append(td);
+				table.append(tr);
+				for( var i=0; i<json.length;i++){
+					var tr = $('<tr>');
+					var td = $('<td>');
+					td.html(json[i].service);
+					tr.append(td);
+					td = $('<td>');
+					td.html(json[i].price);
+					tr.append(td);
+					table.append(tr);
+				}
+				$('body').append(table);
+			});
+		}

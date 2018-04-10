@@ -35,13 +35,54 @@
         padding: 1%;   
         border-collapse:separate;
 }
-    article{        
+#focalevent {
+   display:grid;
+   grid-template-columns:repeat(2, 50%); 
+}   
+.focalevent img{
+    width: 98%;
+    padding: 2%; 
+}
+    
+#Apparel a{
+    color: black;
+    text-decoration: none;    
+}
+    
+#Apparel{
+    display: grid;
+    border: 2px solid black;
+    text-align: center;    
+    padding:2%;
+}
+#Apparel img{
+    grid-template-columns:repeat(2, 50%);
+    padding: 2%;
+}
+    
+
+
+/*Adventure Tours*/
+    
+    #tours{
+        flex: 1 1 100%;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem;
+}
+    #tours img{
+        width: 50%;
+        float:right;
+        padding: 1rem;    
+}
+/*Events*/
+    .upcomingevents{        
         display: flex;
         margin: .5rem;
         padding: .25rem;
 }    
-    article p.eventname img { 
-        width: 50%;
+    #eventimg { 
+        width: 90%;
         float:right;
 }
     .eventname p{
@@ -49,6 +90,8 @@
     text-align: left;
     padding: 2%;
 }
+    
+/*Contact Us*/
     .contactus{    
    padding: 0 2%;
    display: grid;

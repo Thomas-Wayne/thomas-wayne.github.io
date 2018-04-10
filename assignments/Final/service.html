@@ -12,6 +12,7 @@
     <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
     <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
 </head>
 <body>
     <header class="clearfix">
@@ -34,27 +35,9 @@
             </ul>			
     </nav>
     <main class="clearfix">
-        <section class="clearfix" id="services"></section>
-        <table>
-        <thead>
-                <tr>
-                    <td colspan ="2">
-                    <h2>Services</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Service</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>  
-                <tr>
-                    <td><img src="" alt="service" id = "weathericon0"></td>
-                    <td><img src="" alt="" id = "weathericon1"></td>
-                </tr>
-            </tbody>
-            </table>
-        
+               
+        <div onload = "onLoad()"></div>
+               
     </main>
     <footer class="clearfix">
         <aside>
@@ -68,6 +51,7 @@
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/services.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     
 </body>
 </html>

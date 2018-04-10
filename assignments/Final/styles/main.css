@@ -15,7 +15,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {
     background-color: #82b553; 
     color: #f5fbee;
-    margin: 1.25% auto;
+    margin:.5%;
     padding: .5rem;  
     max-width: inherit;
     text-align: center;
@@ -47,7 +47,7 @@ nav button {
     font-size: 1.6rem;
 }
 nav {
-    margin: .2rem auto;
+    margin:.5%;
     background-color: transparent;
     font-family: helvetica, sans-serif;
 }
@@ -56,16 +56,19 @@ nav ul {
     flex-direction: column;
     flex-wrap: nowrap;
     list-style-type: none;
+    text-align: left;
     margin: .2rem auto;
-    background-color: transparent;
+    background-color: #82b553 ;
     border: none;
     justify-content: space-around;
+    
    
 }
 nav ul li {   
     border-top: none;
-    margin: .rem auto;
+    margin: .2rem auto;
     max-width: 100%;
+   
 }
 nav ul li a {
     text-decoration: none;
@@ -85,8 +88,42 @@ nav ul li a:hover {
 nav ul.hide {
     display:none;
 }
+#focalevent a {
+    color: black;
+    text-decoration: none; 
+}
+#focalevent {
+    margin:.5%;
+    text-align: center;
+    display:grid;    
+    grid-template-columns:repeat(1, 100%); 
+}
+.focalevent img{
+    width: 98%;
+    padding:2%;
+}
+#Anatomy{
+    border: 2px solid black;
+    text-align: center;
+    padding:2%;
+    justify-content: space-around;  
+}
+
+#Anatomy img{
+    display: flex;
+    max-width: 100%;
+    width: 98%;
+    padding: 2%;
+}
+#Apparel{
+    display: none;
+}
+#PartsandAcc{
+    display: none;
+}
 
 footer {
+    margin:.5%;
     flex: 1 1 100%;
     border: 2px solid black;
     flex-flow:row wrap;
@@ -98,7 +135,19 @@ footer aside {
     flex: 1 1 100%;
     justify-content:space-around;   
 }
+/*Adventure Tours*/
 
+#tours{
+    flex: 1 1 100%;
+    text-align: left;
+    margin: 1rem;
+    padding: 1rem;
+}
+#tours img{
+    width: 100%;
+    float:top;
+    padding: 1rem;    
+}
 /*Events*/
 
 h2{
@@ -106,7 +155,7 @@ h2{
 }
 .events{
     padding:1%;
-    text-align: ;
+    text-align:left;
     color: #f5fbee;
     background-color: #df702a;
 }
@@ -168,6 +217,19 @@ label textarea {
    padding: 0 2%;
    display: grid;
    grid-template-columns:repeat(1, 100%); 
+}
+
+/*Service*/
+
+ table, th, td 
+{
+  margin:10px 0;
+  border:solid 1px #333;
+  padding:2px 4px;
+  font:15px Verdana;
+}
+th {
+  font-weight:bold;
 }
 
 .clearfix:after {
