@@ -219,6 +219,17 @@ label textarea {
    grid-template-columns:repeat(1, 100%); 
 }
 
+/*Sales*/
+
+
+.carousel ul{
+    list-style: none;
+}
+
+.carousel ul li{
+    float:left;
+}
+
 /*Service*/
 
  table, th, td 

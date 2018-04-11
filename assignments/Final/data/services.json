@@ -1,5 +1,4 @@
-{
-  "services" : [
+"services" ([
 {
     "service": "Basic Tune-Up",
     
@@ -243,5 +242,4 @@
   }      
 
    
- ]
-}
+ ])
