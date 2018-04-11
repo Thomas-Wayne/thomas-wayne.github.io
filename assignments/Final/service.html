@@ -35,8 +35,27 @@
             </ul>			
     </nav>
     <main class="clearfix">
+      <table>
+        <tr><th>Service</th> <th>Price</th></tr>
+        <tr><td id="service"></td><td id="price"></td></tr>
+        </table>
+        
+        <!--<script>
+        function services(arr) {
+            var price = "";
+            var service = "";
+            var i;
+            for(i = 0; i<arr.length; i++) {
+                service += arr[i].service +'<br>'; 
+                price += arr[i].price +'<br>';
+        }
+            document.getElementById("service").innerHTML = service;
+            document.getElementById("price").innerHTML = price;
+            
+        }
+        
+        </script>-->
                
-        <div id="id01"></div>
                
     </main>
     <footer class="clearfix">
@@ -50,8 +69,6 @@
         <p class="footer-bar">&copy;2018 | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/services.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    
+    <script src="scripts/services.js" ></script>
 </body>
 </html>

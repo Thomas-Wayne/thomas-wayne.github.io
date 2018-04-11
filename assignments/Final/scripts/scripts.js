@@ -39,10 +39,11 @@ if (pageHREF !=="") {
                 menu[i].parentNode.className="active";
             }
     }
- //range slider text value   
+
+ /*range slider text value   
  function updateTextInput(val) {
           document.getElementById('textInput').value=val; 
-        }   
+        } */  
     
 }
 

@@ -1,4 +1,5 @@
-"services" ([
+{
+    "services" : [
 {
     "service": "Basic Tune-Up",
     
@@ -240,6 +241,5 @@
     
     "price" :  "$1.99"
   }      
-
-   
- ])
+ ]
+}
