@@ -61,14 +61,11 @@ nav ul {
     background-color: #82b553 ;
     border: none;
     justify-content: space-around;
-    
-   
 }
 nav ul li {   
     border-top: none;
     margin: .2rem auto;
-    max-width: 100%;
-   
+    max-width: 100%;   
 }
 nav ul li a {
     text-decoration: none;
@@ -221,27 +218,75 @@ label textarea {
 
 /*Sales*/
 
-
-.carousel ul{
-    list-style: none;
+.slider{
+    width: 500px;
+    overflow: hidden;
 }
 
-.carousel ul li{
+.slider ul{
+    list-style: none;
+    width: 500px;
+    position: relative;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.slider ul li{
     float:left;
 }
 
 /*Service*/
-
+table{
+    padding: 0 .5%;
+    display:flex;
+    float: left;   
+}
+#price{
+    column-width:auto;
+}
+#service{
+    column-width:auto;
+}
  table, th, td 
 {
-  margin:10px 0;
-  border:solid 1px #333;
-  padding:2px 4px;
-  font:15px Verdana;
+    margin:10px 0;
+    border:solid 1px #333;
+    padding:2px 4px;
 }
 th {
-  font-weight:bold;
+    font-weight:bold;
+    font: 25px helvetica, sans-serif;
+    background-color: #df702a;
+    color:black;
 }
+
+tr{
+    background-color: #82b553;
+}
+
+#service{   
+    text-align: left;    
+}
+#price{ 
+    text-align: right;
+}
+
+.bikepartdiag{    
+    display: none;
+    text-align: center;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 2%;
+    float: right;    
+}
+.bikepartdiag img{    
+    display: none;
+    max-width: 100%;
+    width: 98%;
+    padding: 2%;
+}
+
 
 .clearfix:after {
     content: "";

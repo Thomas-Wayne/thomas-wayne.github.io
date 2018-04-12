@@ -40,10 +40,7 @@ if (pageHREF !=="") {
             }
     }
 
- /*range slider text value   
- function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
-        } */  
-    
+
 }
+
 

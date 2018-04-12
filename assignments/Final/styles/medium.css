@@ -90,6 +90,23 @@
     text-align: left;
     padding: 2%;
 }
+/*Service*/
+    main{
+        margin: .5%;
+    } 
+   
+   .bikepartdiag{    
+        display:flex;       
+        text-align: center;
+        justify-content: space-around;
+        max-width: 50%;
+        padding: 2%;
+        float: right;    
+}
+    .bikepartdiag img{    
+        display: flex;
+}
+    
     
 /*Contact Us*/
     .contactus{    
