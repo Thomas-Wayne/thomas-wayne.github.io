@@ -132,7 +132,18 @@ footer aside {
     flex: 1 1 100%;
     justify-content:space-around;   
 }
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
 /*Adventure Tours*/
+
+
 
 #tours{
     flex: 1 1 100%;
