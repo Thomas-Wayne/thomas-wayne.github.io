@@ -237,16 +237,28 @@ label textarea {
 }
 
 /*Service*/
+
+main{
+    margin: .5%;
+    } 
 table{
     padding: 0 .5%;
-    display:flex;
-    float: left;   
+    display:block;  
+    float:left;
+    white-space: nowrap;
 }
-#price{
-    column-width:auto;
+table td:first-child{
+    text-align: left;
+    white-space: nowrap;
+    width: 20%;             
 }
-#service{
-    column-width:auto;
+table td:last-child{
+    text-align: right;
+    white-space: nowrap;
+    width: 10%;
+}
+table tr{
+    background-color: #82b553;
 }
  table, th, td 
 {
@@ -260,34 +272,12 @@ th {
     background-color: #df702a;
     color:black;
 }
-
-tr{
-    background-color: #82b553;
-}
-
-#service{   
-    text-align: left;    
-}
-#price{ 
-    text-align: right;
-}
-
 .bikepartdiag{    
     display: none;
-    text-align: center;
-    justify-content: space-around;
-    max-width: 100%;
-    padding: 2%;
-    float: right;    
 }
 .bikepartdiag img{    
     display: none;
-    max-width: 100%;
-    width: 98%;
-    padding: 2%;
 }
-
-
 .clearfix:after {
     content: "";
     display: block;
