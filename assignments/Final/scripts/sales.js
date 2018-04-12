@@ -12,7 +12,7 @@ $('.nav button').on('click', function(){
     
     if(whichButton === 'next'){
         if(currentImage === imageQuantity){
-            currentImage = 1;
+            currentImage = 0;
             transition(currentImage, imageWidth);
         }else{
             currentImage++;
@@ -25,7 +25,7 @@ $('.nav button').on('click', function(){
 });
 
 function transition(currentImageInput, ImageWidthInput){
-    var pxValue = -(currentImageInput -1) * ImageWidthInput
+    var pxValue = -(currentImageInput -0) * ImageWidthInput
     
     imageBox.animate({
         'left':pxValue
