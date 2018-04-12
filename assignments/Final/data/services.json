@@ -1,7 +1,6 @@
 {
     "services" : [
-{ "TuneUps" :
-[{
+{
     "service": "Basic Tune-Up",
     
     "price" :  "$39.99"
@@ -25,14 +24,8 @@
     "service": "Bike Build",
     
     "price" :  "$39.99"
-  }
-]
-
 },
-
-
-{"Brakes" :
-[{
+{
     "service": "Adjust/Install Rim Brake Pads",
     
     "price" :  "$9.99"
@@ -77,14 +70,8 @@
     "service": "Bleed Hydraulic Disc Brake",
     
     "price" :  "$14.99"
-  }
- ]
-
-},
-
-
-{"Drivetrain" :
-[{
+  },
+ {
     "service": "Install or Overhaul Bottom Bracket",
     
     "price" :  "$14.99"
@@ -113,14 +100,7 @@
     "service": "Install Crank (3 Piece)",
     
     "price" :  "$23.99"
-  }
-]
-
-},
-
-
-{"Shifter" :
-[
+  },
 {
     "service": "Adjust Derailleur (Front or Rear)",
     
@@ -145,14 +125,7 @@
     "service": "Install Shifter Cables/Housing",
     
     "price" :  "$12.99"
-  }
-]
-
-},
-
-
-{"Wheels" :
-[
+  },
 {
     "service": "Install Inner Tube",
     
@@ -192,13 +165,8 @@
     "service": "Wheel Slime (Per Wheel)",
     
     "price" :  "$4.99"
-  }]
-
-},
-
-
-{"Handlebars" :
-[{
+  },
+{
     "service": "Install Handlebars",
     
     "price" :  "$9.99"
@@ -232,13 +200,8 @@
     "service": "Install or Overhaul Headset",
     
     "price" :  "$17.99"
-  }]
-
-},
-
-
-{"Installs" :
-[{
+  },
+{
     "service": "Child Carrier",
     
     "price" :  "$14.99"
@@ -280,7 +243,4 @@
   } 
  ]
 
-}
-
- ]
 }
