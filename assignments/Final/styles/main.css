@@ -240,7 +240,7 @@ label textarea {
     text-align: center;
     font-family: sans-serif;
 }
-#panel, #flip {
+#panel, #flip, #panel1, #flip1, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5 {
     margin: .5%;
     padding: 5px;
     font-size: 18px;
@@ -251,11 +251,10 @@ label textarea {
     border-radius: 3px;
 }
 
-#panel {
+#panel, #panel1, #panel2, #panel3, #panel4, #panel5 {
     padding: 50px;
     display: none;
 }
-
 
 /*Service*/
 
