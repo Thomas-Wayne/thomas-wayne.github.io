@@ -100,3 +100,4 @@ nav ul li {
     display: grid;
     grid-template-columns:repeat(2, 50%); 
 }
+}
