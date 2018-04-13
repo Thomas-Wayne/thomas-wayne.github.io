@@ -12,29 +12,28 @@ $('.nav button').on('click', function(){
     
     if(whichButton === 'next'){
         if(currentImage === imageQuantity){
-            currentImage = 0;
+            currentImage = 1;
             transition(currentImage, imageWidth);
         }else{
             currentImage++;
             transition(currentImage, imageWidth);
         }
     }else if(whichButton === 'prev'){
-    currentImage--;
-    transition(currentImage, imageWidth);
-}
+        if(currentImage === 1){
+            currentImage = imageQuantity;
+            transition(currentImage, imageWidth);
+        }else{
+            currentImage--;
+            transition(currentImage, imageWidth);
+        }
+    }
 });
 
 function transition(currentImageInput, ImageWidthInput){
     var pxValue = -(currentImageInput -0) * ImageWidthInput
     
     imageBox.animate({
-        'left':pxValue
+        'left': pxValue
     });
 }
 });
-                  
-              
-                  
-                  
-                  
-
