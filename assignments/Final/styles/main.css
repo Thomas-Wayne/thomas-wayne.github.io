@@ -224,24 +224,38 @@ label textarea {
 }
 
 /*Sales*/
-
-.slider{
-    width: 500px;
-    overflow: hidden;
+.bikes{
+     padding: 0 2%;
+     display: grid;
+     grid-template-columns:repeat(1, 100%);        
+}
+.bikes figure {    
+    margin: 2rem 0;    
+}
+.bikes figure img {    
+    width: 100%;
+    border-radius: 2%;
+}
+.bikes figure figcaption { 
+    text-align: center;
+    font-family: sans-serif;
+}
+#panel, #flip {
+    margin: .5%;
+    padding: 5px;
+    font-size: 18px;
+    text-align: left;
+    background-color:#82b553;
+    color: white;
+    border: solid 1px #82b553;
+    border-radius: 3px;
 }
 
-.slider ul{
-    list-style: none;
-    width: 500px;
-    position: relative;
-    left: 0px;
-    padding: 0;
-    margin: 0;
+#panel {
+    padding: 50px;
+    display: none;
 }
 
-.slider ul li{
-    float:left;
-}
 
 /*Service*/
 

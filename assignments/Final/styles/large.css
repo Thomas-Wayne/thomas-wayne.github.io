@@ -14,7 +14,11 @@ table{
     .bikepartdiag img{    
         display: flex;
 }    
-    
+.bikes{
+         padding: 0 2%;
+         display: grid;
+         grid-template-columns:repeat(3, 33%);        
+}
     
 #PartsandAcc a{ 
     color: black;

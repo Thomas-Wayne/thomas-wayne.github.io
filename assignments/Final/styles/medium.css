@@ -90,8 +90,12 @@ nav ul li {
     text-align: left;
     padding: 2%;
 }
-/*Service*/
-
+/*Sales*/
+.bikes{
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns:repeat(2, 50%);        
+}
 
 
 /*Contact Us*/
