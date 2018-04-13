@@ -26,7 +26,7 @@ table{
 }
 #PartsandAcc{
     display:block;
-    margin:.5%;
+    
     flex: 1 1 100%;    
     border: 2px solid black;
 }
